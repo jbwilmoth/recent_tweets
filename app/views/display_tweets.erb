@@ -1,0 +1,5 @@
+<h2><%= @filtered_user.username %>'s tweets</h2>
+
+<% @filtered_user.tweets.each_with_index do |tweet, index| %>
+  <h4><%= index+1 %>. <%= tweet.content %></h4>
+  <% end %>
